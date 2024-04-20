@@ -1,0 +1,100 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans MT";
+  background-color: beige;
+}
+
+.container,
+.order-book-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1400px) {
+  .header,
+  .main,
+  .order-book-container,
+  .settings-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.settings-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.whole-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-book-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-container {
+  flex: 1;
+  margin: 10px;
+  overflow: auto;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.order-table th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .total {
+    display: none;
+  }
+}
+
+.select-container {
+  margin-bottom: 20px;
+}
+
+.select-container label {
+  margin-right: 10px;
+}
+
+.select-container select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
